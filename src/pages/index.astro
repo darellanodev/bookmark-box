@@ -1,7 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Bookmark from '../components/Bookmark.astro'
+
+
+const bookmarks = [
+	{
+		id: "1",
+		title: "Astro documentation",
+		url: "https://docs.astro.build"
+	},
+	{
+		id: "2",
+		title: "Tailwind CSS",
+		url: "https://tailwindcss.com"
+	}
+]
 ---
 
 <Layout>
-	This is the main content
+	<h1 class="text-3xl font-bold mb-6">My favorites</h1>
+	<div class="grid gap-4">
+		{bookmarks.map(bookmark => (
+			<Bookmark bookmark={bookmark} />
+		))}
+	</div>
 </Layout>
