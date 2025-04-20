@@ -1,0 +1,23 @@
+---
+interface Bookmark {
+  id: string;
+  title: string;
+  url: string;
+}
+
+const { bookmark } = Astro.props
+---
+
+<a href={bookmark.url} class="bookmark" role="link">
+  {bookmark.title}
+</a>
+
+<style>
+  .bookmark {
+    display: block;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+</style>
