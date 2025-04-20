@@ -10,7 +10,5 @@ export default defineConfig({
   },
   site: "https://darellanodev.github.io/bookmark-box",
   base: "/bookmark-box/",
-  experimental: {
-    svg: true,
-  },
+  trailingSlash: "ignore",
 });
