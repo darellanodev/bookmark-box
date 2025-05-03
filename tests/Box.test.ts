@@ -21,4 +21,6 @@ test("should render the title of the Box and their two bookmarks", async () => {
   });
 
   expect(result).toContain("Katas");
+  expect(result).toContain("https://codewars.com");
+  expect(result).toContain("https://devdocs.io");
 });

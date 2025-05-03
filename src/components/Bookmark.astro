@@ -8,7 +8,7 @@ const { bookmark } = Astro.props
 ---
 
 <a href={bookmark.url} class="bookmark" role="link">
-  {bookmark.title}
+  {bookmark.title ?? bookmark.url}
 </a>
 
 <style>
