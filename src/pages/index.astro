@@ -1,27 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Bookmark from '../components/Bookmark.astro'
+import Box from '../components/Box.astro';
 
-
-const bookmarks = [
+const katasBookmarks = [
 	{
-		id: "1",
-		title: "Astro documentation",
-		url: "https://docs.astro.build"
+		url: "https://codewars.com"
 	},
 	{
-		id: "2",
-		title: "Tailwind CSS",
-		url: "https://tailwindcss.com"
+		url: "https://devdocs.io"
+	},
+	{
+		url: "https://perplexity.ai"
 	}
 ]
+
+const katasBox = {
+	title: 'Katas',
+	bookmarks: katasBookmarks 
+}
 ---
 
 <Layout>
-	<h1 class="text-3xl font-bold mb-6">My favorites</h1>
-	<div class="grid gap-4">
-		{bookmarks.map(bookmark => (
-			<Bookmark bookmark={bookmark} />
-		))}
-	</div>
+
+	<Box box={katasBox} />
+
+
 </Layout>

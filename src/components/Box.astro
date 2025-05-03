@@ -9,23 +9,12 @@ interface Box {
 
 const { box } = Astro.props
 ---
-
-<div class="box">
-  {box.title}
-  <div class="bookmarks">
+<div class="bg-gray-900 p-6 border border-solid border-white rounded inline-block">
+  <h1 class="text-3xl font-bold mb-6">{box.title}</h1>
+  <div class="grid gap-2">
     {box.bookmarks.map((b:BookmarkType) => {
       return <Bookmark bookmark={b} key={b.url} />
     })}
   </div>
 </div>
 
-<style>
-  .box {
-    display: block;
-    padding: 0.5rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 4px;
-    text-decoration: none;
-    background-color:darkslategrey;
-  }
-</style>
