@@ -1,0 +1,25 @@
+---
+import type { Bookmark } from './Bookmark.astro';
+
+interface Box {
+  title: string;
+  bookmarks: Bookmark[];
+}
+
+const { box } = Astro.props
+---
+
+<div class="box">
+  {box.title}
+</div>
+
+<style>
+  .box {
+    display: block;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color:darkslategrey;
+  }
+</style>
