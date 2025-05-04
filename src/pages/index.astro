@@ -18,11 +18,21 @@ const katasBox = {
 	title: 'Katas',
 	bookmarks: katasBookmarks 
 }
+
+const videoBookmarks = [
+	{url:'https://github.com/yt-dlp/yt-dlp/releases'},
+	{url:'https://online-video-cutter.com/'},
+	{url:'https://www.capcut.com/es-es/'},
+	{url:'https://clideo.com/'}
+]
+
+const videoBox = {
+	title: 'Video',
+	bookmarks: videoBookmarks
+}
 ---
 
 <Layout>
-
 	<Box box={katasBox} />
-
-
+	<Box box={videoBox} />
 </Layout>
