@@ -2,27 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import Box from '../components/Box.astro';
 
-const katasBookmarks = [
-	{url:'https://codewars.com'},
-	{url:'https://devdocs.io'},
-	{url:'https://perplexity.ai'}
-]
-
 const katasBox = {
 	title: 'Katas',
-	bookmarks: katasBookmarks 
+	bookmarks: [
+		{url:'https://codewars.com'},
+		{url:'https://devdocs.io'},
+		{url:'https://perplexity.ai'}
+	] 
 }
-
-const videoBookmarks = [
-	{url:'https://github.com/yt-dlp/yt-dlp/releases'},
-	{url:'https://online-video-cutter.com/'},
-	{url:'https://www.capcut.com/es-es/'},
-	{url:'https://clideo.com/'}
-]
 
 const videoBox = {
 	title: 'Video',
-	bookmarks: videoBookmarks
+	bookmarks: [
+		{url:'https://github.com/yt-dlp/yt-dlp/releases'},
+		{url:'https://online-video-cutter.com/'},
+		{url:'https://www.capcut.com/es-es/'},
+		{url:'https://clideo.com/'}
+	]
 }
 ---
 
@@ -30,3 +26,6 @@ const videoBox = {
 	<Box box={katasBox} />
 	<Box box={videoBox} />
 </Layout>
+
+
+
