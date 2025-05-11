@@ -1,20 +1,17 @@
 ---
-import Bookmark from './Bookmark.astro';
-import type { Bookmark as BookmarkType } from './Bookmark.astro';
-
-interface Box {
-  title: string;
-  bookmarks: BookmarkType[];
-}
-
+import Bookmark from './Bookmark.astro'
+import type { BookmarkType } from '../types'
 const { box } = Astro.props
 ---
+
 <div class="bg-gray-900 p-6 border border-solid border-white rounded inline-block">
   <h1 class="text-3xl font-bold mb-6">{box.title}</h1>
   <div class="grid gap-2">
-    {box.bookmarks.map((b:BookmarkType) => {
-      return <Bookmark bookmark={b} key={b.url} />
-    })}
+    {
+      box.bookmarks.map((b: BookmarkType) => {
+        return <Bookmark bookmark={b} key={b.url} />
+      })
+    }
   </div>
 </div>
 
