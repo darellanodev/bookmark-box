@@ -1,14 +1,28 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Box from '../components/Box.astro';
-import { katasBox, videoBox } from '../data/boxes';
-
+import Layout from '../layouts/Layout.astro'
+import Box from '../components/Box.astro'
+import {
+  codeBox,
+  designBox,
+  toolsBox,
+  learningBox,
+  workBox,
+  personalBox,
+  musicBox,
+  moviesBox,
+  IABox,
+} from '../data/boxes'
 ---
 
 <Layout>
-	<Box box={katasBox} />
-	<Box box={videoBox} />
+  <Box box={codeBox} />
+  <Box box={designBox} />
+  <Box box={toolsBox} />
+  <Box box={learningBox} />
+  <Box box={workBox} />
+  <Box box={personalBox} />
+  <Box box={musicBox} />
+  <Box box={moviesBox} />
+  <Box box={IABox} />
 </Layout>
-
-
 
