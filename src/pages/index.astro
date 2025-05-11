@@ -1,25 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Box from '../components/Box.astro';
+import { katasBox, videoBox } from '../data/boxes';
 
-const katasBox = {
-	title: 'Katas',
-	bookmarks: [
-		{url:'https://codewars.com'},
-		{url:'https://devdocs.io'},
-		{url:'https://perplexity.ai'}
-	] 
-}
-
-const videoBox = {
-	title: 'Video',
-	bookmarks: [
-		{url:'https://github.com/yt-dlp/yt-dlp/releases'},
-		{url:'https://online-video-cutter.com/'},
-		{url:'https://www.capcut.com/es-es/'},
-		{url:'https://clideo.com/'}
-	]
-}
 ---
 
 <Layout>
