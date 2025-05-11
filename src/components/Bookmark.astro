@@ -2,18 +2,7 @@
 const { bookmark } = Astro.props
 ---
 
-<a href={bookmark.url} class="bookmark" role="link">
+<a href={bookmark.url} class="block p-2 border rounded bg-[#2D3748] text-white no-underline" role="link">
   {bookmark.title ?? bookmark.url}
 </a>
-
-<style>
-  .bookmark {
-    display: block;
-    padding: 0.5rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 4px;
-    text-decoration: none;
-    background-color: darkslategrey;
-  }
-</style>
 
