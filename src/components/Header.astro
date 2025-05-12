@@ -1,15 +1,15 @@
 ---
-import Logo from '../assets/svg/logo.svg';
+import Logo from '../assets/svg/logo.svg'
+import NavLink from './NavLink.astro'
 ---
 
-
 <header class="bg-gray-600 text-gray-300 flex justify-between py-4 px-6 items-center">
-    <a href="/bookmark-box/" class="flex items-center">
-        <Logo width={48} height={48} fill="currentColor" />
-        <span class="text-xl font-bold">Bookmark Box</span>
-    </a>
-    <nav>
-        <a href="/bookmark-box/" class="mx-4 hover:underline">Home</a>
-        <a href="/bookmark-box/about" class="mx-4 hover:underline">About</a>
-    </nav>
+  <a href="/bookmark-box/" class="flex items-center">
+    <Logo width={48} height={48} fill="currentColor" />
+    <span class="text-xl font-bold">Bookmark Box</span>
+  </a>
+  <nav>
+    <NavLink href="/bookmark-box/">Home</NavLink>
+    <NavLink href="/bookmark-box/about">About</NavLink>
+  </nav>
 </header>
