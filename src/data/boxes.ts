@@ -105,3 +105,18 @@ export const githubBox = {
   title: 'GitHub',
   bookmarks: [{ title: 'TrendShift', url: 'https://trendshift.io' }],
 }
+
+export const boxes = [
+  katasBox,
+  videoBox,
+  codeBox,
+  designBox,
+  toolsBox,
+  learningBox,
+  workBox,
+  personalBox,
+  musicBox,
+  IABox,
+  moviesBox,
+  githubBox,
+]

@@ -1,31 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Box from '../components/Box.astro'
-import {
-  codeBox,
-  designBox,
-  toolsBox,
-  learningBox,
-  workBox,
-  personalBox,
-  musicBox,
-  moviesBox,
-  IABox,
-  katasBox,
-  githubBox,
-} from '../data/boxes'
+import { boxes } from '../data/boxes'
 ---
 
 <Layout>
-  <Box box={katasBox} />
-  <Box box={codeBox} />
-  <Box box={designBox} />
-  <Box box={toolsBox} />
-  <Box box={learningBox} />
-  <Box box={workBox} />
-  <Box box={personalBox} />
-  <Box box={musicBox} />
-  <Box box={moviesBox} />
-  <Box box={IABox} />
-  <Box box={githubBox} />
+  {boxes.map((box) => (
+    <Box key={box.title} box={box} />
+  ))}
 </Layout>
+
