@@ -100,3 +100,8 @@ export const moviesBox = {
     { title: 'Teletexto', url: 'https://www.teletexto.com/teletexto.asp?programacion=peliculas' },
   ],
 }
+
+export const githubBox = {
+  title: 'GitHub',
+  bookmarks: [{ title: 'TrendShift', url: 'https://trendshift.io' }],
+}
