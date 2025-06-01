@@ -1,0 +1,6 @@
+---
+import Box from './Box.astro'
+import { boxes } from '../data/boxes'
+---
+
+{boxes.map((box) => <Box key={box.title} box={box} />)}

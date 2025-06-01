@@ -1,12 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Box from '../components/Box.astro'
-import { boxes } from '../data/boxes'
+import PageBoxes from '../components/PageBoxes.astro'
 ---
 
 <Layout>
-  {boxes.map((box) => (
-    <Box key={box.title} box={box} />
-  ))}
+  <PageBoxes />
 </Layout>
-

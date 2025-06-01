@@ -106,6 +106,14 @@ export const githubBox = {
   bookmarks: [{ title: 'TrendShift', url: 'https://trendshift.io' }],
 }
 
+export const imagesIABox = {
+  title: 'Images AI',
+  bookmarks: [
+    { title: 'Fooocus AI Playground', url: 'https://fooocusai.ai/playground' },
+    { title: 'Raphael', url: 'https://raphael.app/es' },
+  ],
+}
+
 export const boxes = [
   katasBox,
   videoBox,
@@ -119,4 +127,5 @@ export const boxes = [
   IABox,
   moviesBox,
   githubBox,
+  imagesIABox
 ]
