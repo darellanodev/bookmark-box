@@ -12,7 +12,7 @@ test('should render the title of the Box Images AI', async () => {
 
   const result = await container.renderToString(PageBoxes, {
     props: {
-      pageboxes: {
+      pageBoxes: {
         boxes: boxes,
       },
     },
