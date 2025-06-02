@@ -72,3 +72,7 @@ test('should render the title of the Images AI box', async () => {
   expect(result).toContain('Images AI')
 })
 
+test('should render the title of the PDF readers box', async () => {
+  const result = await renderPageBoxes()
+  expect(result).toContain('PDF readers')
+})

@@ -116,6 +116,15 @@ export const imagesIABox = {
   ],
 }
 
+export const pdfReaders = {
+  title: 'PDF readers',
+  bookmarks: [
+    { title: 'Shadow Reader', url: 'https://www.shadowreader.io/' },
+    { title: 'Dark Mode PDF Viewer', url: 'https://anordinaryusername.github.io/Dark-Mode-PDF-Viewer/' },
+    { title: 'NightPDF', url: 'https://github.com/Lunarequest/NightPDF/releases' },
+  ],
+}
+
 export const boxes = [
   katasBox,
   videoBox,
@@ -130,4 +139,5 @@ export const boxes = [
   moviesBox,
   githubBox,
   imagesIABox,
+  pdfReaders,
 ]
