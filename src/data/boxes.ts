@@ -114,6 +114,7 @@ export const imagesIABox = {
   bookmarks: [
     { title: 'Fooocus AI Playground', url: 'https://fooocusai.ai/playground' },
     { title: 'Raphael', url: 'https://raphael.app/es' },
+    { title: 'Remove.bg', url: 'https://www.remove.bg/es ' },
   ],
 }
 
