@@ -76,3 +76,8 @@ test('should render the title of the PDF readers box', async () => {
   const result = await renderPageBoxes()
   expect(result).toContain('PDF readers')
 })
+
+test('should render the title of the Git box', async () => {
+  const result = await renderPageBoxes()
+  expect(result).toContain('>Git<')
+})

@@ -127,6 +127,15 @@ export const pdfReaders = {
   ],
 }
 
+export const gitBox = {
+  title: 'Git',
+  bookmarks: [
+    { title: 'Toptal Gitignore', url: 'https://www.toptal.com/developers/gitignore' },
+    { title: 'Git Cheat Sheet', url: 'https://education.github.com/git-cheat-sheet-education.pdf' },
+    { title: 'Best Practices for Writing Git Commits', url: 'https://midu.dev/buenas-practicas-escribir-commits-git/' },
+  ],
+}
+
 export const boxes = [
   katasBox,
   videoBox,
@@ -142,4 +151,5 @@ export const boxes = [
   githubBox,
   imagesIABox,
   pdfReaders,
+  gitBox,
 ]
