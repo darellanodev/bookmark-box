@@ -15,6 +15,7 @@ export const videoBox = {
     { title: 'Online Video Cutter', url: 'https://online-video-cutter.com/' },
     { title: 'CapCut', url: 'https://www.capcut.com/es-es/' },
     { title: 'Clideo', url: 'https://clideo.com/' },
+    { title: 'Loom', url: 'https://www.atlassian.com/software/loom' },
   ],
 }
 
