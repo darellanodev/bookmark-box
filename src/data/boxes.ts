@@ -118,7 +118,7 @@ export const imagesIABox = {
   ],
 }
 
-export const pdfReaders = {
+export const pdfReadersBox = {
   title: 'PDF readers',
   bookmarks: [
     { title: 'Shadow Reader', url: 'https://www.shadowreader.io/' },
@@ -150,6 +150,6 @@ export const boxes = [
   moviesBox,
   githubBox,
   imagesIABox,
-  pdfReaders,
+  pdfReadersBox,
   gitBox,
 ]
