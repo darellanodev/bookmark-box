@@ -55,6 +55,7 @@ export const learningBox = {
     { title: 'Regex Learn', url: 'https://regexlearn.com/learn/regex101' },
     { title: 'Go Tour', url: 'https://go.dev/tour/flowcontrol/1' },
     { title: 'Go Tour Basics', url: 'https://go.dev/tour/basics/1' },
+    { title: 'Free certifications', url: 'https://free-certifications.com/ ' },
   ],
 }
 
