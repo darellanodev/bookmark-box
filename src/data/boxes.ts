@@ -1,3 +1,4 @@
+// cSpell:disable
 export const katasBox = {
   title: 'Katas',
   bookmarks: [
@@ -127,5 +128,5 @@ export const boxes = [
   IABox,
   moviesBox,
   githubBox,
-  imagesIABox
+  imagesIABox,
 ]
