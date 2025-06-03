@@ -136,6 +136,11 @@ export const gitBox = {
   ],
 }
 
+export const diagrammingToolsBox = {
+  title: 'Diagramming tools',
+  bookmarks: [{ title: 'Mermaid chart', url: 'https://www.mermaidchart.com/' }],
+}
+
 export const boxes = [
   katasBox,
   videoBox,
@@ -152,4 +157,5 @@ export const boxes = [
   imagesIABox,
   pdfReadersBox,
   gitBox,
+  diagrammingToolsBox,
 ]

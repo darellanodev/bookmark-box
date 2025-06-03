@@ -81,3 +81,8 @@ test('should render the title of the Git box', async () => {
   const result = await renderPageBoxes()
   expect(result).toContain('>Git<')
 })
+
+test('should render the title of the Diagramming tools box', async () => {
+  const result = await renderPageBoxes()
+  expect(result).toContain('Diagramming tools')
+})
