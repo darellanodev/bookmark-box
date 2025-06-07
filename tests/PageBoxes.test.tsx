@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import { expect, test } from 'vitest'
+import { test, expect } from 'vitest'
 import PageBoxes from '../src/components/PageBoxes.jsx'
-import '@testing-library/jest-dom'
 
 test('should render the title of the Katas box', () => {
   render(<PageBoxes />)

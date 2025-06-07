@@ -1,7 +1,6 @@
-import { render } from '@testing-library/react'
-import { expect, test } from 'vitest'
+import { render, screen } from '@testing-library/react'
+import { test, expect } from 'vitest'
 import Box from '../src/components/Box'
-import '@testing-library/jest-dom'
 import type { BookmarkType } from '../src/types'
 
 test('should render the title of the Box and their two bookmarks', () => {

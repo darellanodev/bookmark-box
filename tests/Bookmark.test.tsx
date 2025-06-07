@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { expect, test } from 'vitest'
+import { test, expect } from 'vitest'
 import Bookmark from '../src/components/Bookmark'
 
 test('renders title and link correctly', () => {
