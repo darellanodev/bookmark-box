@@ -1,6 +1,12 @@
-const Footer: React.FC = () => {
+import React from 'react'
+
+type FooterProps = {
+  className?: string
+}
+
+const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   return (
-    <footer className="h-16 bg-black p-4 text-center">
+    <footer className={`h-16 bg-black p-4 text-center ${className}`}>
       <a
         href="https://github.com/darellanodev/bookmark-box"
         target="_blank"
