@@ -85,8 +85,8 @@ export const musicBox = {
   bookmarks: [{ title: 'Signal', url: 'https://signal.vercel.app/edit' }],
 }
 
-export const IABox = {
-  title: 'IA',
+export const AIBox = {
+  title: 'AI',
   bookmarks: [
     { title: 'Perplexity', url: 'https://www.perplexity.ai/' },
     { title: 'You.com', url: 'https://you.com/' },
@@ -109,7 +109,7 @@ export const githubBox = {
   bookmarks: [{ title: 'TrendShift', url: 'https://trendshift.io' }],
 }
 
-export const imagesIABox = {
+export const imagesAIBox = {
   title: 'Images AI',
   bookmarks: [
     { title: 'Fooocus AI Playground', url: 'https://fooocusai.ai/playground' },
@@ -151,10 +151,10 @@ export const boxes = [
   workBox,
   personalBox,
   musicBox,
-  IABox,
+  AIBox,
   moviesBox,
   githubBox,
-  imagesIABox,
+  imagesAIBox,
   pdfReadersBox,
   gitBox,
   diagrammingToolsBox,

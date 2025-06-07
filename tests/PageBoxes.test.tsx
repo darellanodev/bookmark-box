@@ -69,7 +69,7 @@ test('should render the title of the Git box', () => {
 
 test('should render the title of the IA box', () => {
   render(<PageBoxes />)
-  expect(screen.getByRole('heading', { name: /^IA$/i, level: 2 })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: /^AI$/i, level: 2 })).toBeInTheDocument()
 })
 
 test('should render the title of the Tools box', () => {
