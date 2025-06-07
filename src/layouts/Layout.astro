@@ -1,6 +1,5 @@
 ---
-import Header from '../components/Header.tsx'
-import Footer from '../components/Footer.astro'
+import Footer from '../components/Footer'
 import '../styles/global.css'
 ---
 
@@ -13,11 +12,7 @@ import '../styles/global.css'
     <meta name="generator" content={Astro.generator} />
     <title>Bookmark Box</title>
   </head>
-  <body class="h-screen grid grid-rows-[auto,1fr,auto] text-gray-300">
-    <Header />
-    <main class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-      <slot />
-    </main>
-    <Footer />
+  <body>
+    <slot />
   </body>
 </html>

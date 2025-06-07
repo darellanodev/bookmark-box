@@ -4,7 +4,7 @@ import { searchQuery } from '../stores/searchStore'
 
 const Header = () => {
   return (
-    <header className="bg-gray-600 text-gray-300 flex justify-between py-4 px-6 items-center">
+    <header className="h-16 bg-gray-600 text-gray-300 flex justify-between py-4 px-6 items-center">
       <a href="/bookmark-box/" className="flex items-center">
         <span className="text-xl font-bold">Bookmark Box</span>
       </a>
