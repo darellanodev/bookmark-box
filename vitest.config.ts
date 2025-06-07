@@ -6,6 +6,9 @@ export default defineConfig(
     test: {
       include: ['**/*.test.ts', '**/*.test.tsx'],
       exclude: ['**/node_modules/**', '**/.astro/**'],
+      environment: 'jsdom',
+      setupFiles: ['./tests/setup.ts'],
+      globals: true,
       server: {
         deps: {
           inline: ['@astrojs/**', 'astro'],
