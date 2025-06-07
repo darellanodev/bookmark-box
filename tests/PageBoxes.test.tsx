@@ -1,4 +1,6 @@
 import { render, screen } from '@testing-library/react'
+import { act } from 'react'
+import { searchQuery } from '../src/stores/searchStore'
 import { test, expect } from 'vitest'
 import PageBoxes from '../src/components/PageBoxes.jsx'
 
@@ -75,4 +77,14 @@ test('should render the title of the IA box', () => {
 test('should render the title of the Tools box', () => {
   render(<PageBoxes />)
   expect(screen.getByRole('heading', { name: /^Tools$/i, level: 2 })).toBeInTheDocument()
+})
+
+test('filters boxes by search query', () => {
+  act(() => {
+    searchQuery.set('git')
+  })
+  render(<PageBoxes />)
+  const filteredBoxes = screen.getAllByRole('heading', { level: 2 })
+  expect(filteredBoxes.length).toBeGreaterThan(0)
+  filteredBoxes.forEach((box) => expect(box.textContent?.toLowerCase()).toContain('git'))
 })

@@ -10,6 +10,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@nanostores/react": "^1.0.0",
     "@tailwindcss/vite": "^4.1.3",
     "astro": "^5.7.4",
     "nanostores": "^1.0.1",
