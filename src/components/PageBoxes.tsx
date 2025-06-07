@@ -1,3 +1,4 @@
+import React from 'react'
 import Box from './Box'
 import { boxes } from '../data/boxes'
 
