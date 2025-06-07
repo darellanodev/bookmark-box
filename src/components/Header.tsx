@@ -1,5 +1,6 @@
 import React from 'react'
 import NavLink from './NavLink'
+import { searchQuery } from '../stores/searchStore'
 
 const Header = () => {
   return (
@@ -7,7 +8,12 @@ const Header = () => {
       <a href="/bookmark-box/" className="flex items-center">
         <span className="text-xl font-bold">Bookmark Box</span>
       </a>
-      <input type="search" placeholder="Filter boxes" className="bg-gray-700 px-2 py-1 rounded-lg" />
+      <input
+        type="search"
+        placeholder="Filter boxes"
+        className="bg-gray-700 px-2 py-1 rounded-lg"
+        onChange={(e) => searchQuery.set(e.target.value)}
+      />
       <nav>
         <NavLink href="/bookmark-box/">Home</NavLink>
         <NavLink href="/bookmark-box/about">About</NavLink>
