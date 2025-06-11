@@ -4,20 +4,22 @@ import { searchQuery } from '../stores/searchStore'
 
 const Header = () => {
   return (
-    <header className="h-20 bg-gray-600 text-gray-300 flex flex-wrap justify-between py-4 px-6 items-center break-words max-w-full">
-      <a href="/bookmark-box/" className="text-xl font-bold break-words">
-        <span className="text-xl font-bold break-words">Bookmark Box</span>
-      </a>
+    <header className="bg-gray-600 text-gray-300 flex flex-wrap justify-between py-4 px-6 items-center break-words max-w-full">
+      <div className="flex flex-1 items-center justify-between gap-4 px-3 py-2">
+        <a href="/bookmark-box/" className="text-xl font-bold break-words">
+          Bookmark Box
+        </a>
+        <nav className="flex gap-2 mt-1 md:mt-0 md:mr-15">
+          <NavLink href="/bookmark-box/">Home</NavLink>
+          <NavLink href="/bookmark-box/about">About</NavLink>
+        </nav>
+      </div>
       <input
         type="search"
         placeholder="Filter boxes"
-        className="bg-gray-700 px-2 py-1 rounded-lg"
+        className="bg-gray-700 px-2 py-1 rounded-lg w-full md:w-auto mt-2 md:mt-0"
         onChange={(e) => searchQuery.set(e.target.value)}
       />
-      <nav className="flex gap-2">
-        <NavLink href="/bookmark-box/">Home</NavLink>
-        <NavLink href="/bookmark-box/about">About</NavLink>
-      </nav>
     </header>
   )
 }
