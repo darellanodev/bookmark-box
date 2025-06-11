@@ -4,9 +4,9 @@ import { searchQuery } from '../stores/searchStore'
 
 const Header = () => {
   return (
-    <header className="h-16 bg-gray-600 text-gray-300 flex justify-between py-4 px-6 items-center">
-      <a href="/bookmark-box/" className="flex items-center">
-        <span className="text-xl font-bold">Bookmark Box</span>
+    <header className="h-20 bg-gray-600 text-gray-300 flex flex-wrap justify-between py-4 px-6 items-center break-words max-w-full">
+      <a href="/bookmark-box/" className="text-xl font-bold break-words">
+        <span className="text-xl font-bold break-words">Bookmark Box</span>
       </a>
       <input
         type="search"
@@ -14,7 +14,7 @@ const Header = () => {
         className="bg-gray-700 px-2 py-1 rounded-lg"
         onChange={(e) => searchQuery.set(e.target.value)}
       />
-      <nav>
+      <nav className="flex gap-2">
         <NavLink href="/bookmark-box/">Home</NavLink>
         <NavLink href="/bookmark-box/about">About</NavLink>
       </nav>

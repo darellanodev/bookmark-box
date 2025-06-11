@@ -5,7 +5,7 @@ interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {}
 
 const NavLink = ({ href, children, ...props }: NavLinkProps) => {
   return (
-    <a href={href} className="mx-6 hover:bg-gray-500 px-3 py-2 rounded-lg" {...props}>
+    <a href={href} className="hover:bg-gray-500 px-3 py-2 rounded-lg" {...props}>
       {children}
     </a>
   )
