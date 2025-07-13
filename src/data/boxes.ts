@@ -37,6 +37,7 @@ export const designBox = {
     { title: 'SVG Repo', url: 'https://www.svgrepo.com/' },
     { title: 'Perfect Freehand', url: 'https://perfect-freehand-example.vercel.app/' },
     { title: 'FFFuel', url: 'https://www.fffuel.co/' },
+    { title: 'Image resizer', url: 'https://imageresizer.com/' },
   ],
 }
 
@@ -46,6 +47,7 @@ export const toolsBox = {
     { title: 'DB Diagram', url: 'https://dbdiagram.io/' },
     { title: 'Diagrams.net', url: 'https://app.diagrams.net/' },
     { title: 'Visual Paradigm', url: 'https://online.visual-paradigm.com/drive/#proj=0&dashboard' },
+    { title: 'ConvertCase', url: 'https://convertcase.net/' },
   ],
 }
 
@@ -56,6 +58,12 @@ export const learningBox = {
     { title: 'Go Tour', url: 'https://go.dev/tour/flowcontrol/1' },
     { title: 'Go Tour Basics', url: 'https://go.dev/tour/basics/1' },
     { title: 'Free certifications', url: 'https://free-certifications.com/ ' },
+    { title: 'Web.dev', url: 'https://web.dev' },
+    { title: 'Patterns.dev', url: 'https://www.patterns.dev/' },
+    {
+      title: 'Best websites a programmer should visit',
+      url: 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit',
+    },
   ],
 }
 
@@ -71,11 +79,36 @@ export const workBox = {
 export const personalBox = {
   title: 'Personal',
   bookmarks: [
-    { title: 'Portfolio', url: 'https://darellanodev.github.io/' },
     { title: 'GitHub', url: 'https://github.com/darellanodev/' },
+    { title: 'Portfolio', url: 'https://darellanodev.github.io/' },
+    { title: 'Google Developer Profile', url: 'https://g.dev/darellanodev' },
+  ],
+}
+
+export const planificationBox = {
+  title: 'Planification',
+  bookmarks: [
+    { title: 'Trello', url: 'https://trello.com/' },
+    { title: 'Jira', url: 'https://jira.atlassian.com/' },
+    { title: 'Affine Pro', url: 'https://app.affine.pro/' },
+    { title: 'Taiga', url: 'https://taiga.io/' },
+  ],
+}
+
+export const googleBox = {
+  title: 'Google',
+  bookmarks: [
     { title: 'Keep', url: 'https://keep.google.com/#home' },
     { title: 'Calendar', url: 'https://calendar.google.com/calendar/u/0/r' },
-    { title: 'Mail', url: 'https://mail.google.com/mail/u/0/?hl=es#inbox' },
+    { title: 'GMail', url: 'https://mail.google.com/mail/u/0/?hl=es#inbox' },
+    { title: 'Drive', url: 'https://drive.google.com' },
+  ],
+}
+
+export const socialBox = {
+  title: 'Social',
+  bookmarks: [
+    { title: 'LinkedIn', url: 'https://www.linkedin.com' },
     { title: 'Discord', url: 'https://discord.com' },
   ],
 }
@@ -93,6 +126,8 @@ export const AIBox = {
     { title: 'Hugging Face', url: 'https://huggingface.co/' },
     { title: 'Replicate', url: 'https://replicate.com/' },
     { title: 'Phind', url: 'https://www.phind.com/search?home=true' },
+    { title: 'FMHY AI', url: 'https://fmhy.net/ai' },
+    { title: 'Google Gemini', url: 'https://gemini.google.com/app' },
   ],
 }
 
@@ -112,6 +147,8 @@ export const githubBox = {
 export const imagesAIBox = {
   title: 'Images AI',
   bookmarks: [
+    { title: 'Gem Illustrations Posts', url: 'https://gemini.google.com/gem/3d5f0a8ea117' },
+    { title: 'Gem Refranes Español', url: 'https://gemini.google.com/gem/c310b09e9f49' },
     { title: 'Fooocus AI Playground', url: 'https://fooocusai.ai/playground' },
     { title: 'Raphael', url: 'https://raphael.app/es' },
     { title: 'Remove.bg', url: 'https://www.remove.bg/es ' },
@@ -141,6 +178,21 @@ export const diagrammingToolsBox = {
   bookmarks: [{ title: 'Mermaid chart', url: 'https://www.mermaidchart.com/' }],
 }
 
+export const awesomeBox = {
+  title: 'Awesome',
+  bookmarks: [
+    { title: 'Free for dev', url: 'https://github.com/ripienaar/free-for-dev' },
+    { title: 'Awesome LLM Apps', url: 'https://github.com/Shubhamsaboo/awesome-llm-apps' },
+    { title: 'Awesome', url: 'https://github.com/sindresorhus/awesome' },
+    { title: 'Fmhy', url: 'https://fmhy.net' },
+  ],
+}
+
+export const epubReadersBox = {
+  title: 'EPUB readers',
+  bookmarks: [{ title: 'Epub reader', url: 'https://epub-reader.online/' }],
+}
+
 export const boxes = [
   katasBox,
   videoBox,
@@ -158,4 +210,9 @@ export const boxes = [
   pdfReadersBox,
   gitBox,
   diagrammingToolsBox,
+  awesomeBox,
+  epubReadersBox,
+  socialBox,
+  googleBox,
+  planificationBox,
 ]
