@@ -18,3 +18,9 @@ test('should add a star icon to mark the box as starred', () => {
 
   expect(screen.getByAltText('starred')).toBeInTheDocument()
 })
+
+test('should not add a star icon when a box is not starred', () => {
+  render(<Box box={{ title: 'Katas', bookmarks }} />)
+
+  expect(screen.queryByAltText('starred')).not.toBeInTheDocument()
+})
