@@ -13,7 +13,7 @@ interface BoxProps {
 const Box: React.FC<BoxProps> = ({ box }) => {
   return (
     <div className="bg-gray-900 p-6 border border-solid border-white rounded inline-block">
-      <h2 className="text-3xl font-bold mb-6 text-[#ddd] break-words">
+      <h2 className="text-3xl font-bold mb-6 text-[#ddd] break-words flex items-center gap-2">
         {box.starred ? (
           <img src="/bookmark-box/svg/star.svg" alt="starred" style={{ width: '20px', height: '20px' }} />
         ) : (
