@@ -12,3 +12,11 @@ test('should render the title of the Box and their two bookmarks', () => {
   expect(container).toHaveTextContent('https://codewars.com')
   expect(container).toHaveTextContent('https://devdocs.io')
 })
+
+test('should add a star icon to mark the box as starred', () => {
+  const bookmarks: BookmarkType[] = [{ url: 'https://codewars.com' }, { url: 'https://devdocs.io' }]
+
+  const { container } = render(<Box box={{ title: 'Katas', bookmarks, starred: true }} />)
+
+  expect(container.querySelector('img[alt="starred"]')).toBeInTheDocument()
+})
