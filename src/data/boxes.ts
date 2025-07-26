@@ -6,6 +6,7 @@ export const katasBox = {
     { title: 'DevDocs', url: 'https://devdocs.io' },
     { title: 'Perplexity', url: 'https://perplexity.ai' },
   ],
+  starred: true,
 }
 
 export const videoBox = {
