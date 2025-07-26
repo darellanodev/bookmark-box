@@ -14,7 +14,7 @@ test('should render the title of the Box and their two bookmarks', () => {
 })
 
 test('should add a star icon to mark the box as starred', () => {
-  const { container } = render(<Box box={{ title: 'Katas', bookmarks, starred: true }} />)
+  render(<Box box={{ title: 'Katas', bookmarks, starred: true }} />)
 
-  expect(container.querySelector('img[alt="starred"]')).toBeInTheDocument()
+  expect(screen.getByAltText('starred')).toBeInTheDocument()
 })
