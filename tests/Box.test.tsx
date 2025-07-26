@@ -6,11 +6,11 @@ import type { BookmarkType } from '../src/types'
 const bookmarks: BookmarkType[] = [{ url: 'https://codewars.com' }, { url: 'https://devdocs.io' }]
 
 test('should render the title of the Box and their two bookmarks', () => {
-  const { container } = render(<Box box={{ title: 'Katas', bookmarks }} />)
+  render(<Box box={{ title: 'Katas', bookmarks }} />)
 
-  expect(container).toHaveTextContent('Katas')
-  expect(container).toHaveTextContent('https://codewars.com')
-  expect(container).toHaveTextContent('https://devdocs.io')
+  expect(screen.getByText('Katas')).toBeInTheDocument()
+  expect(screen.getByText('https://codewars.com')).toBeInTheDocument()
+  expect(screen.getByText('https://devdocs.io')).toBeInTheDocument()
 })
 
 test('should add a star icon to mark the box as starred', () => {
