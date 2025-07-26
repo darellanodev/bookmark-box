@@ -3,9 +3,9 @@ import { test, expect } from 'vitest'
 import Box from '../src/components/Box'
 import type { BookmarkType } from '../src/types'
 
-test('should render the title of the Box and their two bookmarks', () => {
-  const bookmarks: BookmarkType[] = [{ url: 'https://codewars.com' }, { url: 'https://devdocs.io' }]
+const bookmarks: BookmarkType[] = [{ url: 'https://codewars.com' }, { url: 'https://devdocs.io' }]
 
+test('should render the title of the Box and their two bookmarks', () => {
   const { container } = render(<Box box={{ title: 'Katas', bookmarks }} />)
 
   expect(container).toHaveTextContent('Katas')
@@ -14,8 +14,6 @@ test('should render the title of the Box and their two bookmarks', () => {
 })
 
 test('should add a star icon to mark the box as starred', () => {
-  const bookmarks: BookmarkType[] = [{ url: 'https://codewars.com' }, { url: 'https://devdocs.io' }]
-
   const { container } = render(<Box box={{ title: 'Katas', bookmarks, starred: true }} />)
 
   expect(container.querySelector('img[alt="starred"]')).toBeInTheDocument()
