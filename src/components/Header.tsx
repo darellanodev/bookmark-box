@@ -9,6 +9,14 @@ const Header = () => {
         <a href="/bookmark-box/" className="text-xl font-bold break-words">
           Bookmark Box
         </a>
+        <select className="bg-gray-700 rounded-lg p-1 w-full md:w-auto" defaultValue="">
+          <option value="" disabled>
+            What do you want to do?
+          </option>
+          <option value="1">View all boxes</option>
+          <option value="2">Edit a video for YouTube</option>
+          <option value="3">Practice with katas</option>
+        </select>
         <nav className="flex gap-2 mt-1 md:mt-0 md:mr-15">
           <NavLink href="/bookmark-box/">Home</NavLink>
           <NavLink href="/bookmark-box/about">About</NavLink>
