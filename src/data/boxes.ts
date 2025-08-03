@@ -1,13 +1,4 @@
 // cSpell:disable
-export const katasBox = {
-  title: 'Katas',
-  bookmarks: [
-    { title: 'Codewars', url: 'https://codewars.com' },
-    { title: 'DevDocs', url: 'https://devdocs.io' },
-    { title: 'Perplexity', url: 'https://perplexity.ai' },
-  ],
-  starred: true,
-}
 
 export const videoBox = {
   title: 'Video',
@@ -27,6 +18,7 @@ export const codeBox = {
     { title: 'Codeium', url: 'https://codeium.com/live/general' },
     { title: 'PHP Sandbox', url: 'https://phpsandbox.io/' },
     { title: 'Playcode', url: 'https://playcode.io/' },
+    { title: 'DevDocs', url: 'https://devdocs.io', selectId: '2' },
   ],
 }
 
@@ -57,6 +49,7 @@ export const toolsBox = {
 export const learningBox = {
   title: 'Learning',
   bookmarks: [
+    { title: 'Codewars', url: 'https://codewars.com', selectId: '2' },
     { title: 'Regex Learn', url: 'https://regexlearn.com/learn/regex101' },
     { title: 'Go Tour', url: 'https://go.dev/tour/flowcontrol/1' },
     { title: 'Go Tour Basics', url: 'https://go.dev/tour/basics/1' },
@@ -124,13 +117,13 @@ export const musicBox = {
 export const AIBox = {
   title: 'AI',
   bookmarks: [
-    { title: 'Perplexity', url: 'https://www.perplexity.ai/' },
     { title: 'You.com', url: 'https://you.com/' },
     { title: 'Hugging Face', url: 'https://huggingface.co/' },
     { title: 'Replicate', url: 'https://replicate.com/' },
     { title: 'Phind', url: 'https://www.phind.com/search?home=true' },
     { title: 'FMHY AI', url: 'https://fmhy.net/ai' },
     { title: 'Google Gemini', url: 'https://gemini.google.com/app', selectId: '1' },
+    { title: 'Perplexity', url: 'https://perplexity.ai', selectId: '2' },
   ],
 }
 
@@ -197,7 +190,6 @@ export const epubReadersBox = {
 }
 
 export const boxes = [
-  katasBox,
   videoBox,
   codeBox,
   designBox,

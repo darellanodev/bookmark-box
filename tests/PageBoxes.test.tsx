@@ -5,11 +5,6 @@ import { selectQuery } from '../src/stores/selectStore'
 import { test, expect } from 'vitest'
 import PageBoxes from '../src/components/PageBoxes.jsx'
 
-test('should render the title of the Katas box', () => {
-  render(<PageBoxes />)
-  expect(screen.getByRole('heading', { name: /Katas/i, level: 2 })).toBeInTheDocument()
-})
-
 test('should render the title of the Design box', () => {
   render(<PageBoxes />)
   expect(screen.getByRole('heading', { name: /Design/i, level: 2 })).toBeInTheDocument()
