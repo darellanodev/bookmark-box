@@ -16,11 +16,19 @@ function filterBoxesBySelectId(boxes: BoxType[], selectId: string): BoxType[] {
   )
 }
 
+function filterBoxesBySearchQuery(boxes: BoxType[], query: string): BoxType[] {
+  if (query === '') {
+    return boxes
+  }
+
+  return boxes.filter((box) => box.title.toLowerCase().includes(query))
+}
+
 export default function PageBoxes() {
   const query = useStore(searchQuery).toLowerCase()
   const selectId = useStore(selectQuery)
 
-  let filtered: BoxType[] = boxes.filter((box) => box.title.toLowerCase().includes(query))
+  let filtered: BoxType[] = filterBoxesBySearchQuery(boxes, query)
   filtered = filterBoxesBySelectId(filtered, selectId)
 
   return (
