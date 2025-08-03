@@ -4,16 +4,11 @@ import Box from './Box'
 import { boxes } from '../data/boxes'
 import { searchQuery } from '../stores/searchStore'
 import { selectQuery } from '../stores/selectStore'
-import type { BookmarkType } from '../types'
+import type { BookmarkType, BoxType } from '../types'
 
-export default function PageBoxes() {
-  const query = useStore(searchQuery).toLowerCase()
-  const selectId = useStore(selectQuery)
-
-  let filtered = boxes.filter((box) => box.title.toLowerCase().includes(query))
-
+function filterBoxesBySelectId(boxes: BoxType[], selectId: string): BoxType[] {
   if (selectId !== '') {
-    filtered = filtered.filter((box) => {
+    boxes = boxes.filter((box) => {
       return box.bookmarks.some((bookmark: BookmarkType) => {
         if (bookmark.selectId !== undefined) {
           return bookmark.selectId === selectId
@@ -22,6 +17,15 @@ export default function PageBoxes() {
       })
     })
   }
+  return boxes
+}
+
+export default function PageBoxes() {
+  const query = useStore(searchQuery).toLowerCase()
+  const selectId = useStore(selectQuery)
+
+  let filtered: BoxType[] = boxes.filter((box) => box.title.toLowerCase().includes(query))
+  filtered = filterBoxesBySelectId(filtered, selectId)
 
   return (
     <>
