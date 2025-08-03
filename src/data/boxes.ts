@@ -9,6 +9,7 @@ export const videoBox = {
     { title: 'CapCut', url: 'https://www.capcut.com/es-es/' },
     { title: 'Clideo', url: 'https://clideo.com/' },
     { title: 'Loom', url: 'https://www.atlassian.com/software/loom' },
+    { title: 'YouTube', url: 'https://www.youtube.com/', selectId: '1' },
   ],
 }
 
@@ -43,6 +44,11 @@ export const toolsBox = {
     { title: 'Diagrams.net', url: 'https://app.diagrams.net/' },
     { title: 'Visual Paradigm', url: 'https://online.visual-paradigm.com/drive/#proj=0&dashboard' },
     { title: 'ConvertCase', url: 'https://convertcase.net/' },
+    {
+      title: 'Google Translate',
+      url: 'https://translate.google.es/?sl=es&tl=en&text=ingredientes&op=translate',
+      selectId: '1',
+    },
   ],
 }
 
@@ -111,7 +117,16 @@ export const socialBox = {
 
 export const musicBox = {
   title: 'Music',
-  bookmarks: [{ title: 'Signal', url: 'https://signal.vercel.app/edit' }],
+  bookmarks: [
+    { title: 'Signal', url: 'https://signal.vercel.app/edit' },
+    { title: 'Audiomass', url: 'https://audiomass.co/', selectId: '1' },
+    { title: 'Pixabay Music', url: 'https://pixabay.com/music/', selectId: '1' },
+    {
+      title: 'Musopen - J.S. Bach',
+      url: 'https://musopen.org/music/?composer=johann-sebastian-bach&length__gte=12',
+      selectId: '1',
+    },
+  ],
 }
 
 export const AIBox = {
@@ -124,6 +139,8 @@ export const AIBox = {
     { title: 'FMHY AI', url: 'https://fmhy.net/ai' },
     { title: 'Google Gemini', url: 'https://gemini.google.com/app', selectId: '1' },
     { title: 'Perplexity', url: 'https://perplexity.ai', selectId: '2' },
+    { title: 'ChatGPT', url: 'https://chatgpt.com/', selectId: '1' },
+    { title: 'Voice Generator', url: 'https://voicegenerator.io/', selectId: '1' },
   ],
 }
 
@@ -148,6 +165,11 @@ export const imagesAIBox = {
     { title: 'Fooocus AI Playground', url: 'https://fooocusai.ai/playground' },
     { title: 'Raphael', url: 'https://raphael.app/es' },
     { title: 'Remove.bg', url: 'https://www.remove.bg/es ' },
+    {
+      title: 'Pixelcut AI Remove Objects',
+      url: 'https://www.pixelcut.ai/cleanup-pictures/remove-objects',
+      selectId: '1',
+    },
   ],
 }
 
