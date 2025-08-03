@@ -4,6 +4,7 @@ type BookmarkProps = {
   bookmark: {
     title?: string
     url: string
+    selectId?: string
   }
 }
 
@@ -18,4 +19,3 @@ const Bookmark: React.FC<BookmarkProps> = ({ bookmark }) => (
 )
 
 export default Bookmark
-

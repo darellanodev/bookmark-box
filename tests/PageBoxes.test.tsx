@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { act } from 'react'
 import { searchQuery } from '../src/stores/searchStore'
+import { selectQuery } from '../src/stores/selectStore'
 import { test, expect } from 'vitest'
 import PageBoxes from '../src/components/PageBoxes.jsx'
 
@@ -82,9 +83,34 @@ test('should render the title of the Tools box', () => {
 test('filters boxes by search query', () => {
   act(() => {
     searchQuery.set('git')
+    selectQuery.set('') //'': no preset selected
   })
   render(<PageBoxes />)
   const filteredBoxes = screen.getAllByRole('heading', { level: 2 })
   expect(filteredBoxes.length).toBeGreaterThan(0)
   filteredBoxes.forEach((box) => expect(box.textContent?.toLowerCase()).toContain('git'))
+})
+
+test('filter boxes by selectId query', () => {
+  act(() => {
+    searchQuery.set('') // all boxes
+    selectQuery.set('1') //'1': boxes related with video edition for YouTube
+  })
+  render(<PageBoxes />)
+  const filteredBoxes = screen.getAllByRole('heading', { level: 2 })
+
+  expect(filteredBoxes.length).toBeGreaterThan(0)
+
+  const existingBoxTitles = ['Video', 'Design', 'AI']
+  existingBoxTitles.forEach((title) => expect(filteredBoxes.some((box) => box.textContent?.includes(title))).toBe(true))
+
+  const notExistingBoxTitles = ['PDF readers', 'Diagramming tools']
+  notExistingBoxTitles.forEach((title) => {
+    return expect(
+      filteredBoxes.some((box) => {
+        console.log(`--------------- ${box.textContent}`)
+        return box.textContent?.includes(title)
+      }),
+    ).toBe(false)
+  })
 })

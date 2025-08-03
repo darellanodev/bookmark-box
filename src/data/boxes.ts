@@ -12,6 +12,7 @@ export const katasBox = {
 export const videoBox = {
   title: 'Video',
   bookmarks: [
+    { title: 'Clipchamp', url: 'https://clipchamp.com/', selectId: '1' },
     { title: 'yt-dlp', url: 'https://github.com/yt-dlp/yt-dlp/releases' },
     { title: 'Online Video Cutter', url: 'https://online-video-cutter.com/' },
     { title: 'CapCut', url: 'https://www.capcut.com/es-es/' },
@@ -32,6 +33,7 @@ export const codeBox = {
 export const designBox = {
   title: 'Design',
   bookmarks: [
+    { title: 'Photopea', url: 'https://www.photopea.com/', selectId: '1' },
     { title: 'Excalidraw', url: 'https://excalidraw.com/' },
     { title: 'Figma', url: 'https://www.figma.com/' },
     { title: 'Boxy SVG', url: 'https://boxy-svg.com/app' },
@@ -128,7 +130,7 @@ export const AIBox = {
     { title: 'Replicate', url: 'https://replicate.com/' },
     { title: 'Phind', url: 'https://www.phind.com/search?home=true' },
     { title: 'FMHY AI', url: 'https://fmhy.net/ai' },
-    { title: 'Google Gemini', url: 'https://gemini.google.com/app' },
+    { title: 'Google Gemini', url: 'https://gemini.google.com/app', selectId: '1' },
   ],
 }
 
