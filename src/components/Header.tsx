@@ -1,6 +1,7 @@
 import React from 'react'
 import NavLink from './NavLink'
 import { searchQuery } from '../stores/searchStore'
+import { selectQuery } from '../stores/selectStore'
 
 const Header = () => {
   return (
@@ -9,13 +10,17 @@ const Header = () => {
         <a href="/bookmark-box/" className="text-xl font-bold break-words">
           Bookmark Box
         </a>
-        <select className="bg-gray-700 rounded-lg p-1 w-full md:w-auto" defaultValue="">
+        <select
+          className="bg-gray-700 rounded-lg p-1 w-full md:w-auto"
+          defaultValue=""
+          onChange={(e) => selectQuery.set(e.target.value)}
+        >
           <option value="" disabled>
             What do you want to do?
           </option>
-          <option value="1">View all boxes</option>
-          <option value="2">Edit a video for YouTube</option>
-          <option value="3">Practice with katas</option>
+          <option value="">View all boxes</option>
+          <option value="1">Edit a video for YouTube</option>
+          <option value="2">Practice with katas</option>
         </select>
         <nav className="flex gap-2 mt-1 md:mt-0 md:mr-15">
           <NavLink href="/bookmark-box/">Home</NavLink>
