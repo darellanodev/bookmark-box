@@ -106,11 +106,6 @@ test('filter boxes by selectId query', () => {
 
   const notExistingBoxTitles = ['PDF readers', 'Diagramming tools']
   notExistingBoxTitles.forEach((title) => {
-    return expect(
-      filteredBoxes.some((box) => {
-        console.log(`--------------- ${box.textContent}`)
-        return box.textContent?.includes(title)
-      }),
-    ).toBe(false)
+    return expect(filteredBoxes.some((box) => box.textContent?.includes(title))).toBe(false)
   })
 })
