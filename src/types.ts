@@ -7,6 +7,8 @@ export interface BookmarkType {
 export interface BoxType {
   title: string
   bookmarks: BookmarkType[]
+  starred?: boolean
+  selectId?: string
 }
 
 export interface PageBoxType {

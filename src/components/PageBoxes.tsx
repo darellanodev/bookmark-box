@@ -34,7 +34,7 @@ export default function PageBoxes() {
   return (
     <>
       {filtered.map((box) => (
-        <Box key={box.title} box={box} />
+        <Box key={box.title} box={{ ...box, selectId }} />
       ))}
     </>
   )
