@@ -15,7 +15,7 @@ function filterBySelectId(bookmarks: BookmarkType[], selectId: string): Bookmark
   if (selectId === '') {
     return bookmarks
   }
-  return bookmarks.filter((bookmark) => bookmark.selectId === selectId)
+  return bookmarks.filter((bookmark) => bookmark.selectIds?.includes(selectId))
 }
 const Box: React.FC<BoxProps> = ({ box }) => {
   const filteredBookmarks =

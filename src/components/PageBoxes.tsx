@@ -12,7 +12,7 @@ function filterBoxesBySelectId(boxes: BoxType[], selectId: string): BoxType[] {
   }
 
   return boxes.filter((box) =>
-    box.bookmarks.some((bookmark) => bookmark.selectId !== undefined && bookmark.selectId === selectId),
+    box.bookmarks.some((bookmark) => bookmark.selectIds !== undefined && bookmark.selectIds.includes(selectId)),
   )
 }
 

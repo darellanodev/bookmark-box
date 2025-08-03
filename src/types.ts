@@ -1,7 +1,7 @@
 export interface BookmarkType {
   title?: string
   url: string
-  selectId?: string
+  selectIds?: string[]
 }
 
 export interface BoxType {

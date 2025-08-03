@@ -4,7 +4,7 @@ type BookmarkProps = {
   bookmark: {
     title?: string
     url: string
-    selectId?: string
+    selectIds?: string[]
   }
 }
 

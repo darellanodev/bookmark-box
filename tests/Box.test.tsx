@@ -3,7 +3,7 @@ import { test, expect } from 'vitest'
 import Box from '../src/components/Box'
 import type { BookmarkType } from '../src/types'
 
-const bookmarks: BookmarkType[] = [{ url: 'https://codewars.com' }, { url: 'https://devdocs.io', selectId: '1' }]
+const bookmarks: BookmarkType[] = [{ url: 'https://codewars.com' }, { url: 'https://devdocs.io', selectIds: ['1'] }]
 
 test('should render the title of the Box and their two bookmarks', () => {
   render(<Box box={{ title: 'Katas', bookmarks }} />)

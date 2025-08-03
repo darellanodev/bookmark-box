@@ -3,13 +3,13 @@
 export const videoBox = {
   title: 'Video',
   bookmarks: [
-    { title: 'Clipchamp', url: 'https://clipchamp.com/', selectId: '1' },
+    { title: 'Clipchamp', url: 'https://clipchamp.com/', selectIds: ['1'] },
     { title: 'yt-dlp', url: 'https://github.com/yt-dlp/yt-dlp/releases' },
     { title: 'Online Video Cutter', url: 'https://online-video-cutter.com/' },
     { title: 'CapCut', url: 'https://www.capcut.com/es-es/' },
     { title: 'Clideo', url: 'https://clideo.com/' },
     { title: 'Loom', url: 'https://www.atlassian.com/software/loom' },
-    { title: 'YouTube', url: 'https://www.youtube.com/', selectId: '1' },
+    { title: 'YouTube', url: 'https://www.youtube.com/', selectIds: ['1'] },
   ],
 }
 
@@ -19,14 +19,14 @@ export const codeBox = {
     { title: 'Codeium', url: 'https://codeium.com/live/general' },
     { title: 'PHP Sandbox', url: 'https://phpsandbox.io/' },
     { title: 'Playcode', url: 'https://playcode.io/' },
-    { title: 'DevDocs', url: 'https://devdocs.io', selectId: '2' },
+    { title: 'DevDocs', url: 'https://devdocs.io', selectIds: ['2'] },
   ],
 }
 
 export const designBox = {
   title: 'Design',
   bookmarks: [
-    { title: 'Photopea', url: 'https://www.photopea.com/', selectId: '1' },
+    { title: 'Photopea', url: 'https://www.photopea.com/', selectIds: ['1'] },
     { title: 'Excalidraw', url: 'https://excalidraw.com/' },
     { title: 'Figma', url: 'https://www.figma.com/' },
     { title: 'Boxy SVG', url: 'https://boxy-svg.com/app' },
@@ -47,7 +47,7 @@ export const toolsBox = {
     {
       title: 'Google Translate',
       url: 'https://translate.google.es/?sl=es&tl=en&text=ingredientes&op=translate',
-      selectId: '1',
+      selectIds: ['1'],
     },
   ],
 }
@@ -55,7 +55,7 @@ export const toolsBox = {
 export const learningBox = {
   title: 'Learning',
   bookmarks: [
-    { title: 'Codewars', url: 'https://codewars.com', selectId: '2' },
+    { title: 'Codewars', url: 'https://codewars.com', selectIds: ['2'] },
     { title: 'Regex Learn', url: 'https://regexlearn.com/learn/regex101' },
     { title: 'Go Tour', url: 'https://go.dev/tour/flowcontrol/1' },
     { title: 'Go Tour Basics', url: 'https://go.dev/tour/basics/1' },
@@ -119,12 +119,12 @@ export const musicBox = {
   title: 'Music',
   bookmarks: [
     { title: 'Signal', url: 'https://signal.vercel.app/edit' },
-    { title: 'Audiomass', url: 'https://audiomass.co/', selectId: '1' },
-    { title: 'Pixabay Music', url: 'https://pixabay.com/music/', selectId: '1' },
+    { title: 'Audiomass', url: 'https://audiomass.co/', selectIds: ['1'] },
+    { title: 'Pixabay Music', url: 'https://pixabay.com/music/', selectIds: ['1'] },
     {
       title: 'Musopen - J.S. Bach',
       url: 'https://musopen.org/music/?composer=johann-sebastian-bach&length__gte=12',
-      selectId: '1',
+      selectIds: ['1'],
     },
   ],
 }
@@ -137,10 +137,10 @@ export const AIBox = {
     { title: 'Replicate', url: 'https://replicate.com/' },
     { title: 'Phind', url: 'https://www.phind.com/search?home=true' },
     { title: 'FMHY AI', url: 'https://fmhy.net/ai' },
-    { title: 'Google Gemini', url: 'https://gemini.google.com/app', selectId: '1' },
-    { title: 'Perplexity', url: 'https://perplexity.ai', selectId: '2' },
-    { title: 'ChatGPT', url: 'https://chatgpt.com/', selectId: '1' },
-    { title: 'Voice Generator', url: 'https://voicegenerator.io/', selectId: '1' },
+    { title: 'Google Gemini', url: 'https://gemini.google.com/app', selectIds: ['1'] },
+    { title: 'Perplexity', url: 'https://perplexity.ai', selectIds: ['1', '2'] },
+    { title: 'ChatGPT', url: 'https://chatgpt.com/', selectIds: ['1'] },
+    { title: 'Voice Generator', url: 'https://voicegenerator.io/', selectIds: ['1'] },
   ],
 }
 
@@ -168,7 +168,7 @@ export const imagesAIBox = {
     {
       title: 'Pixelcut AI Remove Objects',
       url: 'https://www.pixelcut.ai/cleanup-pictures/remove-objects',
-      selectId: '1',
+      selectIds: ['1'],
     },
   ],
 }
