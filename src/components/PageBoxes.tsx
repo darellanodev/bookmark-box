@@ -7,17 +7,13 @@ import { selectQuery } from '../stores/selectStore'
 import type { BookmarkType, BoxType } from '../types'
 
 function filterBoxesBySelectId(boxes: BoxType[], selectId: string): BoxType[] {
-  if (selectId !== '') {
-    boxes = boxes.filter((box) => {
-      return box.bookmarks.some((bookmark: BookmarkType) => {
-        if (bookmark.selectId !== undefined) {
-          return bookmark.selectId === selectId
-        }
-        return false
-      })
-    })
+  if (selectId === '') {
+    return boxes
   }
-  return boxes
+
+  return boxes.filter((box) =>
+    box.bookmarks.some((bookmark) => bookmark.selectId !== undefined && bookmark.selectId === selectId),
+  )
 }
 
 export default function PageBoxes() {
