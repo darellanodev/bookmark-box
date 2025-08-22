@@ -52,7 +52,7 @@ test('should render the title of the Diagramming tools box', () => {
 
 test('should render the title of the Video box', () => {
   render(<PageBoxes />)
-  expect(screen.getByRole('heading', { name: /Video/i, level: 2 })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: /Videos/i, level: 2 })).toBeInTheDocument()
 })
 
 test('should render the title of the Code box', () => {
