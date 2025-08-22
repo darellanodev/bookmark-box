@@ -1,7 +1,7 @@
 // cSpell:disable
 
 export const videoBox = {
-  title: 'Video',
+  title: 'Videos',
   bookmarks: [
     { title: 'Clipchamp', url: 'https://clipchamp.com/', selectIds: ['1'] },
     { title: 'yt-dlp', url: 'https://github.com/yt-dlp/yt-dlp/releases' },
@@ -126,6 +126,7 @@ export const musicBox = {
       url: 'https://musopen.org/music/?composer=johann-sebastian-bach&length__gte=12',
       selectIds: ['1'],
     },
+    { title: 'mixkit (happy music)', url: 'https://mixkit.co/free-stock-music/happy/' },
   ],
 }
 
@@ -133,7 +134,6 @@ export const AIBox = {
   title: 'AI',
   bookmarks: [
     { title: 'You.com', url: 'https://you.com/' },
-    { title: 'Hugging Face', url: 'https://huggingface.co/' },
     { title: 'Replicate', url: 'https://replicate.com/' },
     { title: 'Phind', url: 'https://www.phind.com/search?home=true' },
     { title: 'FMHY AI', url: 'https://fmhy.net/ai' },
@@ -141,6 +141,19 @@ export const AIBox = {
     { title: 'Perplexity', url: 'https://perplexity.ai', selectIds: ['1', '2'] },
     { title: 'ChatGPT', url: 'https://chatgpt.com/', selectIds: ['1'] },
     { title: 'Voice Generator', url: 'https://voicegenerator.io/', selectIds: ['1'] },
+  ],
+}
+
+export const AIVideoBox = {
+  title: 'AI Video',
+  bookmarks: [{ title: 'RunwayML', url: 'https://runwayml.com' }],
+}
+
+export const AIMultipleBox = {
+  title: 'AI Multiple',
+  bookmarks: [
+    { title: 'Kie', url: 'https://kie.ai/es' },
+    { title: 'Hugging Face', url: 'https://huggingface.co/' },
   ],
 }
 
@@ -170,6 +183,7 @@ export const imagesAIBox = {
       url: 'https://www.pixelcut.ai/cleanup-pictures/remove-objects',
       selectIds: ['1'],
     },
+    { title: 'Upscale media', url: 'https://upscale.media/es/upload' },
   ],
 }
 
@@ -193,7 +207,11 @@ export const gitBox = {
 
 export const diagrammingToolsBox = {
   title: 'Diagramming tools',
-  bookmarks: [{ title: 'Mermaid chart', url: 'https://www.mermaidchart.com/' }],
+  bookmarks: [
+    { title: 'Mermaid chart', url: 'https://www.mermaidchart.com/' },
+    { title: 'Drawio', url: 'https://www.draw.io/' },
+    { title: 'plantuml', url: 'https://plantuml.com/' },
+  ],
 }
 
 export const awesomeBox = {
@@ -209,6 +227,22 @@ export const awesomeBox = {
 export const epubReadersBox = {
   title: 'EPUB readers',
   bookmarks: [{ title: 'Epub reader', url: 'https://epub-reader.online/' }],
+}
+
+export const textToSpeechBox = {
+  title: 'Text to speech',
+  bookmarks: [
+    { title: 'Google Text to Speech', url: 'https://cloud.google.com/text-to-speech' },
+    { title: 'Luv voice', url: 'https://luvvoice.com/es' },
+  ],
+}
+
+export const databaseBox = {
+  title: 'Database',
+  bookmarks: [
+    { title: 'DBeaver', url: 'https://dbeaver.io/' },
+    { title: 'HeidiSQL', url: 'https://www.heidisql.com/' },
+  ],
 }
 
 export const boxes = [
@@ -232,4 +266,8 @@ export const boxes = [
   socialBox,
   googleBox,
   planificationBox,
+  AIMultipleBox,
+  AIVideoBox,
+  textToSpeechBox,
+  databaseBox,
 ]
