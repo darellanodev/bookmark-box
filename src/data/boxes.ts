@@ -127,6 +127,8 @@ export const musicBox = {
       selectIds: ['1'],
     },
     { title: 'mixkit (happy music)', url: 'https://mixkit.co/free-stock-music/happy/', selectIds: ['1'] },
+    { title: 'freepdm', url: 'https://freepd.com/', selectIds: ['1'] },
+    { title: 'openmusicarchive.org', url: 'https://openmusicarchive.org/', selectIds: ['1'] },
   ],
 }
 
