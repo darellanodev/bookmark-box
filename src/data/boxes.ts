@@ -126,7 +126,7 @@ export const musicBox = {
       url: 'https://musopen.org/music/?composer=johann-sebastian-bach&length__gte=12',
       selectIds: ['1'],
     },
-    { title: 'mixkit (happy music)', url: 'https://mixkit.co/free-stock-music/happy/' },
+    { title: 'mixkit (happy music)', url: 'https://mixkit.co/free-stock-music/happy/', selectIds: ['1'] },
   ],
 }
 
