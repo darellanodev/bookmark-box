@@ -2,12 +2,14 @@ import React from 'react'
 import NavLink from './NavLink'
 import { searchQuery } from '../stores/searchStore'
 import { selectQuery } from '../stores/selectStore'
+import logoUrl from '../assets/svg/logo.svg?url'
 
 const Header = () => {
   return (
     <header className="bg-gray-600 text-gray-300 flex flex-wrap justify-between py-4 px-6 items-center break-words max-w-full">
       <div className="flex flex-1 items-center justify-between gap-4 px-3 py-2">
-        <a href="/bookmark-box/" className="text-xl font-bold break-words">
+        <a href="/bookmark-box/" className="text-xl font-bold break-words flex items-center">
+          <img src={logoUrl} alt="Logo" className="w-16 h-16" />
           Bookmark Box
         </a>
         <select
