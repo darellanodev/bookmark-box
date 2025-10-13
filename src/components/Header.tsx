@@ -3,6 +3,7 @@ import NavLink from './NavLink'
 import { searchQuery } from '../stores/searchStore'
 import { selectQuery } from '../stores/selectStore'
 import logoUrl from '../assets/svg/logo.svg?url'
+import { House, Info } from 'lucide-react'
 
 const Header = () => {
   return (
@@ -25,8 +26,12 @@ const Header = () => {
           <option value="2">Practice with katas</option>
         </select>
         <nav className="flex gap-2 mt-1 md:mt-0 md:mr-15">
-          <NavLink href="/bookmark-box/">Home</NavLink>
-          <NavLink href="/bookmark-box/about">About</NavLink>
+          <NavLink icon={House} href="/bookmark-box/">
+            Home
+          </NavLink>
+          <NavLink icon={Info} href="/bookmark-box/about">
+            About
+          </NavLink>
         </nav>
       </div>
       <input

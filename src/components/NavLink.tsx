@@ -1,11 +1,14 @@
 import React from 'react'
 import type { AnchorHTMLAttributes } from 'react'
 
-interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {}
+interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  icon?: React.ElementType
+}
 
-const NavLink = ({ href, children, ...props }: NavLinkProps) => {
+const NavLink = ({ href, children, icon: Icon, ...props }: NavLinkProps) => {
   return (
-    <a href={href} className="hover:bg-gray-500 px-3 py-2 rounded-lg" {...props}>
+    <a href={href} className="btn" {...props}>
+      {Icon && <Icon />}
       {children}
     </a>
   )
