@@ -17,6 +17,10 @@ A simple application to store your web bookmarks, developed for learning Astro.
 [![Testing Library](https://img.shields.io/badge/Testing_Library-E33332?style=flat&logo=testing-library&logoColor=white)](https://testing-library.com)
 [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://react.dev)
 
+## Screenshots
+
+![bookmark-box screenshot](https://github.com/darellanodev/bookmark-box/blob/main/img_github_readme/screenshots.png?raw=true)
+
 ## Try it online
 
 <https://darellanodev.github.io/bookmark-box/>
