@@ -69,6 +69,16 @@ export const learningBox = {
   ],
 }
 
+export const eBooks = {
+  title: 'Ebooks',
+  bookmarks: [
+    { title: 'Fran Iglesias eBooks', url: 'https://leanpub.com/u/franiglesias' },
+    { title: 'Fran Iglesias - Refactor cotidiano', url: 'https://leanpub.com/refactorcotidiano/read' },
+    { title: 'Fran Iglesias - Object Calisthenics', url: 'https://leanpub.com/calisthenics/read' },
+    { title: 'Fran Iglesias - Raciones Diseño Software', url: 'https://leanpub.com/pppsd/read' },
+  ],
+}
+
 export const workBox = {
   title: 'Work',
   bookmarks: [
@@ -272,4 +282,5 @@ export const boxes = [
   AIVideoBox,
   textToSpeechBox,
   databaseBox,
+  eBooks,
 ]
