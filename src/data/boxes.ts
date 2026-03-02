@@ -196,6 +196,7 @@ export const imagesAIBox = {
       selectIds: ['1'],
     },
     { title: 'Upscale media', url: 'https://upscale.media/es/upload' },
+    { title: 'Gemini watermark remover', url: 'https://www.gradually.ai/en/gemini-watermark-remover/' },
   ],
 }
 
