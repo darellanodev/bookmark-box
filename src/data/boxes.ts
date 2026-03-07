@@ -258,6 +258,18 @@ export const databaseBox = {
   ],
 }
 
+export const skillsAIBox = {
+  title: 'Skills AI',
+  bookmarks: [
+    { title: 'frontend-slides', url: 'https://github.com/zarazhangrui/frontend-slides' },
+    { title: 'threejs-skills', url: 'https://github.com/CloudAI-X/threejs-skills' },
+    { title: 'php-modernization-skill', url: 'https://github.com/netresearch/php-modernization-skill' },
+    { title: 'awesome-agent-skills', url: 'https://github.com/VoltAgent/awesome-agent-skills' },
+    { title: 'context-engineering-kit', url: 'https://github.com/NeoLabHQ/context-engineering-kit' },
+    { title: 'php-best-practices-skill', url: 'https://github.com/developerfred/php-best-practices-skill' },
+  ],
+}
+
 export const boxes = [
   videoBox,
   codeBox,
@@ -284,4 +296,5 @@ export const boxes = [
   textToSpeechBox,
   databaseBox,
   eBooks,
+  skillsAIBox,
 ]
