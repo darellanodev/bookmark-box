@@ -165,6 +165,8 @@ export const AIBox = {
     { title: '9Router', url: 'https://github.com/decolua/9router' },
     { title: 'Krisp AI YouTube Summarizer', url: 'https://krisp.ai/youtube-video-summarizer/' },
     { title: 'ChatGLM', url: 'https://chatglm.cn/main/alltoolsdetail?lang' },
+    { title: 'Kie', url: 'https://kie.ai/es' },
+    { title: 'Hugging Face', url: 'https://huggingface.co/' },
   ],
 }
 
@@ -173,14 +175,6 @@ export const AIVideoBox = {
   bookmarks: [
     { title: 'RunwayML', url: 'https://runwayml.com' },
     { title: 'Meta AI', url: 'https://www.meta.ai/' },
-  ],
-}
-
-export const AIMultipleBox = {
-  title: 'AI Multiple',
-  bookmarks: [
-    { title: 'Kie', url: 'https://kie.ai/es' },
-    { title: 'Hugging Face', url: 'https://huggingface.co/' },
   ],
 }
 
@@ -319,7 +313,6 @@ export const boxes = [
   socialBox,
   googleBox,
   planificationBox,
-  AIMultipleBox,
   AIVideoBox,
   textToSpeechBox,
   databaseBox,
