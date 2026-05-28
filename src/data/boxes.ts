@@ -10,6 +10,7 @@ export const videoBox = {
     { title: 'Clideo', url: 'https://clideo.com/' },
     { title: 'Loom', url: 'https://www.atlassian.com/software/loom' },
     { title: 'YouTube', url: 'https://www.youtube.com/', selectIds: ['1'] },
+    { title: 'OpenReel Video', url: 'https://github.com/Augani/openreel-video' },
   ],
 }
 
@@ -34,6 +35,8 @@ export const designBox = {
     { title: 'Perfect Freehand', url: 'https://perfect-freehand-example.vercel.app/' },
     { title: 'FFFuel', url: 'https://www.fffuel.co/' },
     { title: 'Image resizer', url: 'https://imageresizer.com/' },
+    { title: 'Ezremove AI', url: 'https://ezremove.ai/' },
+    { title: 'Paletton', url: 'https://www.paletton.com' },
   ],
 }
 
@@ -66,6 +69,7 @@ export const learningBox = {
       title: 'Best websites a programmer should visit',
       url: 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit',
     },
+    { title: 'AI Hero', url: 'https://www.aihero.dev/' },
   ],
 }
 
@@ -153,6 +157,7 @@ export const AIBox = {
     { title: 'Perplexity', url: 'https://perplexity.ai', selectIds: ['1', '2'] },
     { title: 'ChatGPT', url: 'https://chatgpt.com/', selectIds: ['1'] },
     { title: 'Voice Generator', url: 'https://voicegenerator.io/', selectIds: ['1'] },
+    { title: '9Router', url: 'https://github.com/decolua/9router' },
   ],
 }
 
@@ -197,6 +202,9 @@ export const imagesAIBox = {
     },
     { title: 'Upscale media', url: 'https://upscale.media/es/upload' },
     { title: 'Gemini watermark remover', url: 'https://www.gradually.ai/en/gemini-watermark-remover/' },
+    { title: 'Perchance AI Image Generator', url: 'https://perchance.org/ai-text-to-image-generator' },
+    { title: 'AI Image Generator', url: 'https://image-generator.com/ai-image-generator' },
+    { title: 'Pollinations AI', url: 'https://pollinations.ai' },
   ],
 }
 
@@ -267,6 +275,16 @@ export const skillsAIBox = {
     { title: 'awesome-agent-skills', url: 'https://github.com/VoltAgent/awesome-agent-skills' },
     { title: 'context-engineering-kit', url: 'https://github.com/NeoLabHQ/context-engineering-kit' },
     { title: 'php-best-practices-skill', url: 'https://github.com/developerfred/php-best-practices-skill' },
+    { title: 'Andrej Karpathy Skills', url: 'https://github.com/forrestchang/andrej-karpathy-skills' },
+    { title: 'Skills.sh', url: 'https://skills.sh' },
+    { title: 'Awesome OpenCode', url: 'https://github.com/awesome-opencode/awesome-opencode' },
+  ],
+}
+
+export const mediaBox = {
+  title: 'Media',
+  bookmarks: [
+    { title: 'Jellyfin', url: 'https://github.com/jellyfin/jellyfin' },
   ],
 }
 
@@ -297,4 +315,5 @@ export const boxes = [
   databaseBox,
   eBooks,
   skillsAIBox,
+  mediaBox,
 ]
