@@ -52,6 +52,9 @@ export const toolsBox = {
       url: 'https://translate.google.es/?sl=es&tl=en&text=ingredientes&op=translate',
       selectIds: ['1'],
     },
+    { title: 'Serveo', url: 'https://serveo.net/' },
+    { title: 'eSim Plus', url: 'https://esimplus.me/temporary-numbers' },
+    { title: 'Speechnotes', url: 'https://speechnotes.co/dictate/' },
   ],
 }
 
@@ -143,6 +146,8 @@ export const musicBox = {
     { title: 'mixkit (happy music)', url: 'https://mixkit.co/free-stock-music/happy/', selectIds: ['1'] },
     { title: 'freepdm', url: 'https://freepd.com/', selectIds: ['1'] },
     { title: 'openmusicarchive.org', url: 'https://openmusicarchive.org/', selectIds: ['1'] },
+    { title: 'Chiptune', url: 'https://chiptune.app/browse/' },
+    { title: 'Free to Use Music', url: 'https://freetouse.com/music' },
   ],
 }
 
@@ -158,12 +163,17 @@ export const AIBox = {
     { title: 'ChatGPT', url: 'https://chatgpt.com/', selectIds: ['1'] },
     { title: 'Voice Generator', url: 'https://voicegenerator.io/', selectIds: ['1'] },
     { title: '9Router', url: 'https://github.com/decolua/9router' },
+    { title: 'Krisp AI YouTube Summarizer', url: 'https://krisp.ai/youtube-video-summarizer/' },
+    { title: 'ChatGLM', url: 'https://chatglm.cn/main/alltoolsdetail?lang' },
   ],
 }
 
 export const AIVideoBox = {
   title: 'AI Video',
-  bookmarks: [{ title: 'RunwayML', url: 'https://runwayml.com' }],
+  bookmarks: [
+    { title: 'RunwayML', url: 'https://runwayml.com' },
+    { title: 'Meta AI', url: 'https://www.meta.ai/' },
+  ],
 }
 
 export const AIMultipleBox = {
