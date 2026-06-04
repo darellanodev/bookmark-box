@@ -292,6 +292,27 @@ export const mediaBox = {
   ],
 }
 
+export const vimBox = {
+  title: 'Vim',
+  bookmarks: [
+    { title: 'Learn VimScript the Hard Way', url: 'https://learnvimscriptthehardway.stevelosh.com/' },
+    { title: 'LazyVim', url: 'https://github.com/LazyVim/LazyVim' },
+    { title: 'kickstart.nvim', url: 'https://github.com/nvim-lua/kickstart.nvim' },
+    { title: 'LunarVim', url: 'https://github.com/lunarvim/lunarvim' },
+    { title: 'Neovide', url: 'https://github.com/neovide/neovide' },
+    { title: 'Oni', url: 'https://github.com/onivim/oni' },
+    { title: 'goneovim', url: 'https://github.com/akiyosi/goneovim' },
+  ],
+}
+
+export const mcpsBox = {
+  title: 'MCPs',
+  bookmarks: [
+    { title: 'MCP Servers', url: 'https://mcpservers.org/' },
+    { title: 'MCP.so', url: 'https://mcp.so/' },
+  ],
+}
+
 export const boxes = [
   videoBox,
   codeBox,
@@ -319,4 +340,6 @@ export const boxes = [
   eBooks,
   skillsAIBox,
   mediaBox,
+  vimBox,
+  mcpsBox,
 ]
