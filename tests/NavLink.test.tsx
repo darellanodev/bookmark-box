@@ -7,5 +7,5 @@ test('renders the href and class correctly', () => {
 
   const linkElement = screen.getByRole('link', { name: /about/i })
   expect(linkElement).toHaveAttribute('href', '/about')
-  expect(linkElement).toHaveClass('rounded-lg')
+  expect(linkElement).toHaveClass('btn')
 })
