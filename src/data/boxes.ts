@@ -313,6 +313,21 @@ export const mcpsBox = {
   ],
 }
 
+export const downloadersBox = {
+  title: 'Downloaders',
+  bookmarks: [{ title: 'SnapAny OK.ru', url: 'https://snapany.com/es/ok-ru' }],
+}
+
+export const jobsBox = {
+  title: 'Jobs',
+  bookmarks: [{ title: 'Hiring Cafe', url: 'https://hiring.cafe/' }],
+}
+
+export const analyticsBox = {
+  title: 'Analytics',
+  bookmarks: [{ title: 'Microsoft Clarity', url: 'https://clarity.microsoft.com/' }],
+}
+
 export const boxes = [
   videoBox,
   codeBox,
@@ -342,4 +357,7 @@ export const boxes = [
   mediaBox,
   vimBox,
   mcpsBox,
+  downloadersBox,
+  jobsBox,
+  analyticsBox,
 ]
