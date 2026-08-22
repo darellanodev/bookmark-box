@@ -11,6 +11,7 @@ export const videoBox = {
     { title: 'Loom', url: 'https://www.atlassian.com/software/loom' },
     { title: 'YouTube', url: 'https://www.youtube.com/', selectIds: ['1'] },
     { title: 'OpenReel Video', url: 'https://github.com/Augani/openreel-video' },
+    { title: 'Fuzz Puppy', url: 'https://www.fuzzpuppy.com/' },
   ],
 }
 
@@ -37,6 +38,7 @@ export const designBox = {
     { title: 'Image resizer', url: 'https://imageresizer.com/' },
     { title: 'Ezremove AI', url: 'https://ezremove.ai/' },
     { title: 'Paletton', url: 'https://www.paletton.com' },
+    { title: 'Aura Gradients', url: 'https://auragradients.vercel.app' },
   ],
 }
 
@@ -209,6 +211,7 @@ export const imagesAIBox = {
     { title: 'Perchance AI Image Generator', url: 'https://perchance.org/ai-text-to-image-generator' },
     { title: 'AI Image Generator', url: 'https://image-generator.com/ai-image-generator' },
     { title: 'Pollinations AI', url: 'https://pollinations.ai' },
+    { title: 'BG Eraser', url: 'https://bgeraser.com/' },
   ],
 }
 
@@ -315,7 +318,10 @@ export const mcpsBox = {
 
 export const downloadersBox = {
   title: 'Downloaders',
-  bookmarks: [{ title: 'SnapAny OK.ru', url: 'https://snapany.com/es/ok-ru' }],
+  bookmarks: [
+    { title: 'SnapAny OK.ru', url: 'https://snapany.com/es/ok-ru' },
+    { title: 'SaveClips OK.ru', url: 'https://saveclips.org/okru-video-downloader' },
+  ],
 }
 
 export const jobsBox = {
@@ -326,6 +332,22 @@ export const jobsBox = {
 export const analyticsBox = {
   title: 'Analytics',
   bookmarks: [{ title: 'Microsoft Clarity', url: 'https://clarity.microsoft.com/' }],
+}
+
+export const ocrBox = {
+  title: 'OCR',
+  bookmarks: [
+    { title: 'MiniWebTool OCR Image to Text', url: 'https://miniwebtool.com/ocr-image-to-text/' },
+    { title: 'FreeOCR', url: 'https://freeocr.ai/es' },
+  ],
+}
+
+export const learnEnglishBox = {
+  title: 'Learn English',
+  bookmarks: [
+    { title: 'Google Labs LLL', url: 'https://labs.google/lll/es' },
+    { title: 'EU Academy - My English Course B1', url: 'https://academy.europa.eu/courses/my-english-course-b1' },
+  ],
 }
 
 export const boxes = [
@@ -360,4 +382,6 @@ export const boxes = [
   downloadersBox,
   jobsBox,
   analyticsBox,
+  ocrBox,
+  learnEnglishBox,
 ]
