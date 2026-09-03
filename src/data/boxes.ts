@@ -22,6 +22,7 @@ export const codeBox = {
     { title: 'PHP Sandbox', url: 'https://phpsandbox.io/' },
     { title: 'Playcode', url: 'https://playcode.io/' },
     { title: 'DevDocs', url: 'https://devdocs.io', selectIds: ['2'] },
+    { title: 'Dencode', url: 'https://dencode.com/' },
   ],
 }
 
